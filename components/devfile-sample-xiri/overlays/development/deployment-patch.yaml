@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-xiri
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci1t-830-0099-tenant/ci1t-830-0099-app/devfile-sample-xiri@sha256:b535245599451c32c5eb7c053fe97922d5edbd849d16197029a22ae7ce1d4de1
+        name: my-nodejs
+        resources: {}
+status: {}
